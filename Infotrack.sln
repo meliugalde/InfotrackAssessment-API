@@ -12,11 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infotrack.Infrastructure", "src\Infotrack.Infrastructure\Infotrack.Infrastructure.csproj", "{7715C345-5DD1-43A5-833B-4C0460424DB4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{83AF5283-9F57-41D1-8500-28A50DF7945B}"
-	ProjectSection(SolutionItems) = preProject
-		SearchServiceTests.cs = SearchServiceTests.cs
-	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infotrack.Tests", "tests\Infotrack.Tests\Infotrack.Tests.csproj", "{7458E012-5D70-4A88-9421-4ED8EF9CACD7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infotrack.All.Tests", "tests\Infotrack.All.Tests\Infotrack.All.Tests.csproj", "{DD094475-5C84-4362-A5E6-30121F887F21}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,10 +33,10 @@ Global
 		{7715C345-5DD1-43A5-833B-4C0460424DB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7715C345-5DD1-43A5-833B-4C0460424DB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7715C345-5DD1-43A5-833B-4C0460424DB4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7458E012-5D70-4A88-9421-4ED8EF9CACD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7458E012-5D70-4A88-9421-4ED8EF9CACD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7458E012-5D70-4A88-9421-4ED8EF9CACD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7458E012-5D70-4A88-9421-4ED8EF9CACD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD094475-5C84-4362-A5E6-30121F887F21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD094475-5C84-4362-A5E6-30121F887F21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD094475-5C84-4362-A5E6-30121F887F21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD094475-5C84-4362-A5E6-30121F887F21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +45,6 @@ Global
 		{83A36C52-E88A-4711-B1CA-ADB36BCFBBF7} = {57E6B6A9-2FE2-49CE-BDE4-B890672BE7AF}
 		{E7A6C070-D3AB-4E07-9D0C-7CBEF0E94648} = {57E6B6A9-2FE2-49CE-BDE4-B890672BE7AF}
 		{7715C345-5DD1-43A5-833B-4C0460424DB4} = {57E6B6A9-2FE2-49CE-BDE4-B890672BE7AF}
-		{7458E012-5D70-4A88-9421-4ED8EF9CACD7} = {83AF5283-9F57-41D1-8500-28A50DF7945B}
+		{DD094475-5C84-4362-A5E6-30121F887F21} = {83AF5283-9F57-41D1-8500-28A50DF7945B}
 	EndGlobalSection
 EndGlobal
