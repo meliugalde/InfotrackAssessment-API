@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using Infotrack.API.Controllers;
 using Infotrack.Domain.Interfaces;
 using Infotrack.Domain.Models.Dtos;
@@ -8,7 +5,6 @@ using Infotrack.Domain.Models.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Moq;
-using NUnit.Framework;
 
 namespace Infotrack.Tests;
 
@@ -41,7 +37,7 @@ namespace Infotrack.Tests;
             // Assert
             Assert.IsInstanceOf<BadRequestObjectResult>(result);
             var badRequestResult = result as BadRequestObjectResult;
-            Assert.That(badRequestResult.Value, Is.EqualTo(messageExpected));
+            Assert.That(badRequestResult?.Value, Is.EqualTo(messageExpected));
              _mockLogger.Verify(
                  x => x.Log(
                     It.Is<LogLevel>(l => l == LogLevel.Error),
@@ -160,7 +156,6 @@ namespace Infotrack.Tests;
                 x => x.Log(
                     It.Is<LogLevel>(l => l == LogLevel.Information),
                     It.IsAny<EventId>(),
-                    //It.IsAny<It.IsAnyType>(),
                     It.Is<It.IsAnyType>((v, t) => v.ToString().Contains("Fetching url searches.")),
                     It.IsAny<Exception>(),
                     It.IsAny<Func<It.IsAnyType, Exception?, string>>()),Times.Once);
